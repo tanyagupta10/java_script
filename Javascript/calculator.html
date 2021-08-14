@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+.formstyle{
+ width:250px;
+ height:287px;
+ margin:auto;
+ border:2px solid black;
+}
+
+input{
+ width:80px;
+ height:40px;
+ background-color:green;
+ font-size:30px;
+ color:white;
+ border-bottom:1px solid black;
+
+}
+#finalanswer{
+ width:250px;
+}
+#clearbutton{
+ width:250px;
+}
+
+</style>
+
+</head>
+<body>
+	<div class="formstyle">
+		<form name="from">
+			<input type="text" name="ans" id="finalanswer">
+			<br>
+			<input type="button" value="1" onclick="form.ans.value+='1'">
+			<input type="button" value="2" onclick="form.ans.value+='2'">
+			<input type="button" value="3" onclick="form.ans.value+='3'">
+			<br>
+			<input type="button" value="4" onclick="form.ans.value+='4'">
+			<input type="button" value="5" onclick="form.ans.value+='5'">
+			<input type="button" value="6" onclick="form.ans.value+='6'">
+			<br>
+			<input type="button" value="7" onclick="form.ans.value+='7'">
+			<input type="button" value="8" onclick="form.ans.value+='8'">
+			<input type="button" value="9" onclick="form.ans.value+='9'">
+			<br>
+			<input type="button" value="+" onclick="form.ans.value+='+'">
+			<input type="button" value="-" onclick="form.ans.value+='-'">
+			<input type="button" value="/" onclick="form.ans.value+='/'">
+			<br>
+			<input type="button" value="0" onclick="form.ans.value+='0'">
+			<input type="button" value="*" onclick="form.ans.value+='*'">
+			<input type="button" value="=" onclick="form.ans.value=eval(form.ans.value)">
+			<br>
+			<input type="button" value="clear all" id="clearbutton" onclick="form.ans.value=''">
+
+
+		</form>
+	</div>
+
+</body>
+</html>
